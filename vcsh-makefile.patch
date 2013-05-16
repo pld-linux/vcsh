@@ -1,0 +1,13 @@
+--- Makefile~	2013-05-06 00:56:11.000000000 +0300
++++ Makefile	2013-05-16 13:03:34.863192036 +0300
+@@ -14,8 +14,8 @@
+ 	install -d $(DESTDIR)$(PREFIX)/share/doc/$(self)
+ 	install -m 0644 README.md $(DESTDIR)$(PREFIX)/share/doc/$(self)
+ 	install -m 0644 doc/hooks $(DESTDIR)$(PREFIX)/share/doc/$(self)
+-	install -d $(DESTDIR)$(PREFIX)/share/zsh/vendor-completions
+-	install -m 0644 _$(self) $(DESTDIR)$(PREFIX)/share/zsh/vendor-completions
++	install -d $(DESTDIR)$(PREFIX)/share/zsh/site-functions
++	install -m 0644 _$(self) $(DESTDIR)$(PREFIX)/share/zsh/site-functions
+ 
+ manpages: $(manpages)
+ 
