@@ -5,7 +5,7 @@ Release:	0.2
 License:	GPL v2
 Group:		Applications/Console
 Source0:	https://github.com/alerque/vcsh/archive/v%{version}.tar.gz
-# Source0-md5:	67ee98eb5db9a4b112966cc8aac41c11
+# Source0-md5:	7305aaef5522d504ed36226034089c10
 Patch0:		%{name}-makefile.patch
 URL:		https://github.com/RichiH/vcsh
 Requires:	mr
