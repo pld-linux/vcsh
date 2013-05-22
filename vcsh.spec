@@ -18,12 +18,12 @@ turn, means you can have one repository per config set (zsh, vim, ssh,
 etc), picking and choosing which configs you want to use on which
 machine.
 
-%package zsh-completions
+%package -n zsh-completion-%{name}
 Summary:	zsh shell completion routines for %{name}
 Group:		Applications/Console
 Requires:	zsh
 
-%description zsh-completions
+%description -n zsh-completion-%{name}
 Tab completion routines for %{name} in zsh.
 
 %prep
@@ -48,6 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
 
-%files zsh-completions
+%files -n zsh-completion-%{name}
 %defattr(644,root,root,755)
 %{_datadir}/zsh/site-functions/_%{name}
