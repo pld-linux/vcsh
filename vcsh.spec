@@ -1,11 +1,10 @@
-%define		dotversion	3
 Summary:	home directory config manager based on git
 Name:		vcsh
-Version:	1.2
-Release:	0.1
+Version:	1.2.3
+Release:	0.2
 License:	GPL v2
 Group:		Applications/Console
-Source0:	https://github.com/RichiH/vcsh/archive/v%{version}-%{dotversion}.tar.gz
+Source0:	https://github.com/alerque/vcsh/archive/v%{version}.tar.gz
 # Source0-md5:	67ee98eb5db9a4b112966cc8aac41c11
 URL:		https://github.com/RichiH/vcsh
 Requires:	mr
@@ -19,7 +18,7 @@ etc), picking and choosing which configs you want to use on which
 machine.
 
 %prep
-%setup -q -n %{name}-%{version}-%{dotversion}
+%setup -q -n %{name}-%{version}
 
 %build
 %{__make}
