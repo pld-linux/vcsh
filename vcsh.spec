@@ -1,11 +1,11 @@
 Summary:	home directory config manager based on git
 Name:		vcsh
-Version:	1.2
-Release:	0.3
+Version:	1.3
+Release:	0.1
 License:	GPL v2
 Group:		Applications/Console
 Source0:	https://github.com/alerque/vcsh/archive/v%{version}-pld.tar.gz
-# Source0-md5:	0f3f15c5a962dc932672aa7270d02daf
+# Source0-md5:	058289ab41037b9ac8971c63087f5ec0
 Patch0:		%{name}-makefile.patch
 URL:		https://github.com/RichiH/vcsh
 Requires:	mr
@@ -30,10 +30,6 @@ Tab completion routines for %{name} in zsh.
 %setup -q -n %{name}-%{version}-pld
 %patch0 -p1
 
-# Manpage in original package is compiled by ronn which PLD doesn't have. The
-# upstream project maintains a patch with a precompiled version for some
-# versions of debian that also lack ronn. An upstream branch for PLD is also
-# being maintained with these fixes and other tweaks.
 patch -p1 < pld/patches/precompiled_manpage.patch
 
 %build
